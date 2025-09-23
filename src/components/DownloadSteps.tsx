@@ -118,7 +118,7 @@ export function DownloadSteps() {
               <li>
                 Open website:{" "}
                 <a
-                  href="https://Quickreel.app.netlify"
+                  href="https://quickreeldw.app.netlify"
                   className="text-blue-600 underline"
                 >
                   Quick Reel Downloader
