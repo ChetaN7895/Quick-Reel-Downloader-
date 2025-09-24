@@ -20,12 +20,13 @@ import {
 } from "lucide-react";
 const links = [
   { href: "/", label: "Home" },
-  { href: "/blog", label: "Blog" },
-  { href: "/faq", label: "FAQ" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy-Policy" },
   { href: "/terms", label: "Terms" },
+  {href: "/disclaimer", label:"Disclaimer"},
+  { href: "/faq", label: "FAQ" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export  function Navbar() {
@@ -111,8 +112,8 @@ export function Footer() {
             Reel Downloader
           </h3>
           <p className="text-sm text-gray-600">
-            Free QuickReel Download for Mp4 videos and Reels. <br />⚡
-            Fast, 🔒 secure, works on all devices.
+            Free QuickReel Download for Mp4 videos and Reels. <br />⚡ Fast, 🔒
+            secure, works on all devices.
           </p>{" "}
           <br></br>
           <p className="text-sm text-gray-600">
@@ -133,10 +134,10 @@ export function Footer() {
           <ul className="space-y-2 text-sm">
             {[
               { href: "/", label: "Home", icon: Home },
-              { href: "/blog", label: "Blog", icon: FileText },
-              { href: "/faq", label: "FAQ", icon: HelpCircle },
               { href: "/about", label: "About", icon: Info },
               { href: "/contact", label: "Contact", icon: Mail },
+              { href: "/faq", label: "FAQ", icon: HelpCircle },
+              { href: "/blog", label: "Blog", icon: FileText },
             ].map(({ href, label, icon: Icon }) => (
               <li key={href}>
                 <Link
@@ -170,6 +171,11 @@ export function Footer() {
             <li>
               <Link href="/terms" className="transition hover:text-purple-600">
                 Terms of Service
+              </Link>
+            </li>
+            <li>
+              <Link href="/disclaimer" className="transition hover:text-purple-600">
+                Disclaimer
               </Link>
             </li>
           </ul>
@@ -230,8 +236,10 @@ export function Footer() {
         transition={{ delay: 0.3, duration: 1 }}
       >
         © {new Date().getFullYear()}{" "}
-        <span className="font-semibold text-purple-700">Quick Reel Downloader</span>.
-        All rights reserved.
+        <span className="font-semibold text-purple-700">
+          Quick Reel Downloader
+        </span>
+        . All rights reserved.
       </motion.div>
     </footer>
   );
