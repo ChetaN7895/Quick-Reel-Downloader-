@@ -73,7 +73,7 @@ export default function HomePage() {
         <p className="mx-auto mb-8 max-w-2xl text-lg">
           Download QuickReel Videos — fast, secure, and free.
         </p>
-        <div className="mx-auto max-w-xl">
+        <div className="mx-auto max-w-xl text-gray-500">
           <InstagramVideoForm />
         </div>
       </section>
