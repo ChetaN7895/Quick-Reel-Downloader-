@@ -6,7 +6,7 @@ import { Navbar, Footer } from "@/components/layout";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ReactQueryProvider } from "@/components/providers/react-query-provider";
 
-import BlogDetail from "@/components/blogs";
+import BlogDetail from "@/components/Blogss";
 
 import { cn } from "@/lib/utils";
 
